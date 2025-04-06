@@ -2,6 +2,7 @@
   "name": "tiemtrabaco.com",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tiemtrabaco.com",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
