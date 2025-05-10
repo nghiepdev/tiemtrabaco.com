@@ -1,5 +1,18 @@
 import Image from 'next/image';
+
 import bg from '@/app/background.png';
+import img0 from '@/public/assets/baco/0-min.jpg';
+import img1 from '@/public/assets/baco/1-min.jpg';
+import img2 from '@/public/assets/baco/2-min.jpg';
+import img3 from '@/public/assets/baco/3-min.jpg';
+import img4 from '@/public/assets/baco/4-min.jpg';
+import img5 from '@/public/assets/baco/5-min.jpg';
+import img6 from '@/public/assets/baco/6-min.jpg';
+import img7 from '@/public/assets/baco/7-min.jpg';
+import img8 from '@/public/assets/baco/8-min.jpg';
+import img9 from '@/public/assets/baco/9-min.jpg';
+
+const images = [img0, img1, img2, img3, img4, img5, img6, img7, img8, img9];
 
 export default function Home() {
   return (
@@ -17,7 +30,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-4">Tiệm Trà Baco</h1>
-          <p className="text-xl md:text-2xl mb-6">Trà sữa - Ăn vặt - Mỳ cay</p>
+          <p className="text-xl md:text-2xl mb-6">Trà sữa - Mỳ cay - Ăn vặt</p>
           <p className="text-lg md:text-xl mb-8 text-gray-100">
             Hương vị tuyệt vời - Giá cả phải chăng
           </p>
@@ -114,18 +127,24 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">Thư Viện Ảnh</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-[200px]">
-            {/* Placeholder images with different heights for masonry effect */}
-            {Array.from({length: 20}).map((_, index) => (
+            {images.map((src, index) => (
               <div
                 key={index}
                 className={`relative overflow-hidden rounded-lg group ${
-                  // Randomly assign different row spans for masonry effect
                   index % 5 === 0 ? 'row-span-2' : 'row-span-1'
                 }`}
               >
                 <div className="absolute inset-0 bg-gray-200 animate-pulse" />
                 <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-                  <span className="text-4xl">🍵</span>
+                  <Image
+                    src={src}
+                    alt=""
+                    placeholder="blur"
+                    fill
+                    priority
+                    quality={100}
+                    className="object-cover object-center"
+                  />
                 </div>
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300" />
               </div>
@@ -176,7 +195,7 @@ export default function Home() {
             >
               <div className="bg-blue-50 rounded-lg p-6 text-center hover:shadow-lg transition-all group-hover:bg-blue-100">
                 <div className="w-16 h-16 mx-auto mb-4 bg-blue-200 rounded-full flex items-center justify-center">
-                  <span className="text-2xl">📱</span>
+                  <span className="text-2xl">👥</span>
                 </div>
                 <h3 className="font-semibold mb-2">Fanpage</h3>
                 <p className="text-gray-600 group-hover:text-blue-600">
