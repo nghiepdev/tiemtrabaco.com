@@ -1,18 +1,7 @@
 import Image from 'next/image';
 
 import bg from '@/app/background.png';
-import img0 from '@/public/assets/baco/0-min.jpg';
-import img1 from '@/public/assets/baco/1-min.jpg';
-import img2 from '@/public/assets/baco/2-min.jpg';
-import img3 from '@/public/assets/baco/3-min.jpg';
-import img4 from '@/public/assets/baco/4-min.jpg';
-import img5 from '@/public/assets/baco/5-min.jpg';
-import img6 from '@/public/assets/baco/6-min.jpg';
-import img7 from '@/public/assets/baco/7-min.jpg';
-import img8 from '@/public/assets/baco/8-min.jpg';
-import img9 from '@/public/assets/baco/9-min.jpg';
-
-const images = [img0, img1, img2, img3, img4, img5, img6, img7, img8, img9];
+import Gallery from './gallery';
 
 export default function Home() {
   return (
@@ -21,7 +10,7 @@ export default function Home() {
       <section className="relative h-svh flex items-center justify-center overflow-hidden bg-gradient-to-r from-pink-100 to-purple-100">
         <Image
           src={bg}
-          alt="Background Baco"
+          alt="Background BaCo"
           placeholder="blur"
           fill
           className="object-cover object-center blur scale-105 brightness-50"
@@ -29,7 +18,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-4">Tiệm Trà Baco</h1>
+          <h1 className="text-5xl md:text-7xl font-bold mb-4">Tiệm Trà BaCo</h1>
           <p className="text-xl md:text-2xl mb-6">Trà sữa - Mỳ cay - Ăn vặt</p>
           <p className="text-lg md:text-xl mb-8 text-gray-100">
             Hương vị tuyệt vời - Giá cả phải chăng
@@ -126,30 +115,7 @@ export default function Home() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">Thư Viện Ảnh</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-[200px]">
-            {images.map((src, index) => (
-              <div
-                key={index}
-                className={`relative overflow-hidden rounded-lg group ${
-                  index % 5 === 0 ? 'row-span-2' : 'row-span-1'
-                }`}
-              >
-                <div className="absolute inset-0 bg-gray-200 animate-pulse" />
-                <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-                  <Image
-                    src={src}
-                    alt=""
-                    placeholder="blur"
-                    fill
-                    priority
-                    quality={100}
-                    className="object-cover object-center"
-                  />
-                </div>
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300" />
-              </div>
-            ))}
-          </div>
+          <Gallery />
         </div>
       </section>
 

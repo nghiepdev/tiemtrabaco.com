@@ -5,7 +5,7 @@ import {cn} from '@/lib/cn';
 const jsonLd = {
   '@context': 'http://schema.org',
   '@type': 'Restaurant',
-  name: 'Tiệm Trà Baco',
+  name: 'Tiệm Trà BaCo',
   description:
     'Thưởng thức trà sữa, mỳ cay và đồ ăn vặt ngon, chuẩn vị. Chất lượng đảm bảo, phục vụ nhanh chóng, giá cả hợp lý',
 
@@ -78,7 +78,7 @@ const jsonLd = {
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://tiemtrabaco.com'),
-  title: 'Tiệm Trà Baco | Trà sữa - Mỳ Cay - Ăn Vặt',
+  title: 'Tiệm Trà BaCo | Trà sữa - Mỳ Cay - Ăn Vặt',
   description:
     'Thưởng thức trà sữa, mỳ cay và đồ ăn vặt ngon, chuẩn vị. Chất lượng đảm bảo, phục vụ nhanh chóng, giá cả hợp lý',
 };
