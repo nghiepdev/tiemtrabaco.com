@@ -1,6 +1,5 @@
 import type {Metadata} from 'next';
 import './globals.css';
-import {cn} from '@/lib/cn';
 
 const siteName = 'Tiệm Trà BaCo';
 const title = `${siteName} | Quán Trà sữa, Mỳ Cay và Ăn Vặt giá rẻ tại Tây Hòa, Phú Yên`;
@@ -99,7 +98,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi">
-      <body className={cn('antialiased')}>
+      <body className="antialiased">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}}
