@@ -2,13 +2,17 @@ import type {Metadata} from 'next';
 import './globals.css';
 import {cn} from '@/lib/cn';
 
+const siteName = 'Tiệm Trà BaCo';
+const title = `${siteName} | Quán Trà sữa, Mỳ Cay và Ăn Vặt giá rẻ tại Tây Hòa, Phú Yên`;
+const description =
+  'Thưởng thức trà sữa, mỳ cay và đồ ăn vặt ngon, chuẩn vị. Chất lượng đảm bảo, phục vụ nhanh chóng, giá cả hợp lý giá rẻ tại Tây Hòa, Phú Yên';
+
 const jsonLd = {
   '@context': 'http://schema.org',
   '@type': 'Restaurant',
-  name: 'Tiệm Trà BaCo',
-  description:
-    'Thưởng thức trà sữa, mỳ cay và đồ ăn vặt ngon, chuẩn vị. Chất lượng đảm bảo, phục vụ nhanh chóng, giá cả hợp lý',
-
+  name: siteName,
+  description,
+  slogan: 'Hương vị tuyệt vời - Giá cả phải chăng',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Đường ĐH 75, Hoà Đồng, Tây Hòa',
@@ -78,9 +82,14 @@ const jsonLd = {
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://tiemtrabaco.com'),
-  title: 'Tiệm Trà BaCo | Trà sữa - Mỳ Cay - Ăn Vặt',
-  description:
-    'Thưởng thức trà sữa, mỳ cay và đồ ăn vặt ngon, chuẩn vị. Chất lượng đảm bảo, phục vụ nhanh chóng, giá cả hợp lý',
+  title,
+  description,
+  openGraph: {
+    type: 'website',
+    siteName,
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({
