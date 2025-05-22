@@ -31,7 +31,7 @@ export default function Home() {
             {/* Trà Sữa */}
             <div className="bg-pink-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
               <div className="w-20 h-20 mx-auto mb-4 bg-pink-200 rounded-full flex items-center justify-center">
-                <span className="text-3xl">🥤</span>
+                <span className="i-hugeicons-bubble-tea-02 text-3xl text-pink-500" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Trà Sữa</h3>
               <p className="text-gray-600">
@@ -42,7 +42,7 @@ export default function Home() {
             {/* Ăn Vặt */}
             <div className="bg-purple-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
               <div className="w-20 h-20 mx-auto mb-4 bg-purple-200 rounded-full flex items-center justify-center">
-                <span className="text-3xl">🍟</span>
+                <span className="i-hugeicons-french-fries-02 text-3xl text-yellow-500" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Ăn Vặt</h3>
               <p className="text-gray-600">Các món ăn vặt hấp dẫn</p>
@@ -51,7 +51,7 @@ export default function Home() {
             {/* Mỳ Cay */}
             <div className="bg-red-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
               <div className="w-20 h-20 mx-auto mb-4 bg-red-200 rounded-full flex items-center justify-center">
-                <span className="text-3xl">🍜</span>
+                <span className="i-hugeicons-noodles text-3xl text-red-500" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Mỳ Cay</h3>
               <p className="text-gray-600">Nhiều cấp độ cay cho bạn lựa chọn</p>
@@ -69,28 +69,28 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-pink-100 rounded-full flex items-center justify-center">
-                <span className="text-2xl">⭐</span>
+                <span className="i-hugeicons-star text-2xl text-yellow-400" />
               </div>
               <h3 className="font-semibold mb-2">Chất Lượng</h3>
               <p className="text-gray-600">Nguyên liệu tươi mới</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-pink-100 rounded-full flex items-center justify-center">
-                <span className="text-2xl">⚡</span>
+                <span className="i-hugeicons-falling-star text-2xl text-indigo-400" />
               </div>
               <h3 className="font-semibold mb-2">Phục Vụ Nhanh</h3>
               <p className="text-gray-600">Không phải chờ đợi lâu</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-pink-100 rounded-full flex items-center justify-center">
-                <span className="text-2xl">💰</span>
+                <span className="i-hugeicons-money-saving-jar text-2xl text-green-500" />
               </div>
               <h3 className="font-semibold mb-2">Giá Cả Hợp Lý</h3>
               <p className="text-gray-600">Phù hợp với mọi người</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-pink-100 rounded-full flex items-center justify-center">
-                <span className="text-2xl">🎁</span>
+                <span className="i-hugeicons-gift text-2xl text-pink-400" />
               </div>
               <h3 className="font-semibold mb-2">Ưu Đãi</h3>
               <p className="text-gray-600">Nhiều chương trình khuyến mãi</p>
@@ -116,7 +116,7 @@ export default function Home() {
             <a href="tel:0372440541" className="group">
               <div className="bg-pink-50 rounded-lg p-6 text-center hover:shadow-lg transition-all group-hover:bg-pink-100">
                 <div className="w-16 h-16 mx-auto mb-4 bg-pink-200 rounded-full flex items-center justify-center">
-                  <span className="text-2xl">📞</span>
+                  <span className="i-hugeicons-telephone text-2xl text-pink-500" />
                 </div>
                 <h3 className="font-semibold mb-2">Điện Thoại</h3>
                 <p className="text-gray-600 group-hover:text-pink-600">
@@ -132,7 +132,7 @@ export default function Home() {
               className="bg-purple-50 rounded-lg p-6 text-center group hover:shadow-lg transition-all group-hover:bg-purple-100"
             >
               <div className="w-16 h-16 mx-auto mb-4 bg-purple-200 rounded-full flex items-center justify-center">
-                <span className="text-2xl">📍</span>
+                <span className="i-hugeicons-maps-search text-2xl text-purple-500" />
               </div>
               <h3 className="font-semibold mb-2">Địa Chỉ</h3>
               <p className="text-gray-600 group-hover:text-purple-600">
@@ -149,7 +149,7 @@ export default function Home() {
             >
               <div className="bg-blue-50 rounded-lg p-6 text-center hover:shadow-lg transition-all group-hover:bg-blue-100">
                 <div className="w-16 h-16 mx-auto mb-4 bg-blue-200 rounded-full flex items-center justify-center">
-                  <span className="text-2xl">👥</span>
+                  <span className="i-hugeicons-facebook-02 text-2xl text-blue-500" />
                 </div>
                 <h3 className="font-semibold mb-2">Fanpage</h3>
                 <p className="text-gray-600 group-hover:text-blue-600">
