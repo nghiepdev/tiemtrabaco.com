@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import bg from '@/app/background.png';
+import Hero from './hero';
 import Gallery from './gallery';
 
 export default function Home() {
@@ -17,20 +18,7 @@ export default function Home() {
           priority
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-4">Tiệm Trà BaCo</h1>
-          <p className="text-xl md:text-2xl mb-6">Trà sữa - Mỳ cay - Ăn vặt</p>
-          <p className="text-lg md:text-xl mb-8 text-gray-100">
-            Hương vị tuyệt vời - Giá cả phải chăng
-          </p>
-          <a
-            href="https://www.facebook.com/tiemtrabaco"
-            target="_fb"
-            className="bg-pink-500 hover:bg-pink-600 text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors"
-          >
-            Gọi món
-          </a>
-        </div>
+        <Hero />
       </section>
 
       {/* Categories Section */}
