@@ -14,8 +14,25 @@ import img6 from '@/public/assets/baco/6-min.jpg';
 import img7 from '@/public/assets/baco/7-min.jpg';
 import img8 from '@/public/assets/baco/8-min.jpg';
 import img9 from '@/public/assets/baco/9-min.jpg';
+import img10 from '@/public/assets/baco/10-min.jpg';
+import img11 from '@/public/assets/baco/11-min.jpg';
+import img12 from '@/public/assets/baco/12-min.jpg';
 
-const images = [img0, img1, img2, img3, img4, img5, img6, img7, img8, img9];
+const images = [
+  img0,
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img10,
+  img11,
+  img12,
+];
 
 export default function Gallery() {
   return (

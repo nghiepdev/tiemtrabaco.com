@@ -28,7 +28,7 @@ export default function Hero() {
             Gọi món
           </a>
           <PhotoProvider>
-            <PhotoView src="/assets/baco/10-min.jpg">
+            <PhotoView src="/assets/baco/12-min.jpg">
               <button className="text-white/90 hover:text-pink-400 cursor-pointer underline underline-offset-4 px-4 py-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-pink-300">
                 Xem menu
               </button>
