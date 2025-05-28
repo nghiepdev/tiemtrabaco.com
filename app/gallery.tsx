@@ -17,6 +17,8 @@ import img9 from '@/public/assets/baco/9-min.jpg';
 import img10 from '@/public/assets/baco/10-min.jpg';
 import img11 from '@/public/assets/baco/11-min.jpg';
 import img12 from '@/public/assets/baco/12-min.jpg';
+import img13 from '@/public/assets/baco/13-min.jpg';
+import img14 from '@/public/assets/baco/14-min.jpg';
 
 const images = [
   img0,
@@ -32,6 +34,8 @@ const images = [
   img10,
   img11,
   img12,
+  img13,
+  img14,
 ];
 
 export default function Gallery() {
