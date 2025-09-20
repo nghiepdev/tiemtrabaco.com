@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import bg from '@/app/background.png';
+import bgImage from '@/app/background.jpg';
 import Hero from './hero';
 import Gallery from './gallery';
 
@@ -10,7 +10,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-svh flex items-center justify-center overflow-hidden bg-gradient-to-r from-pink-100 to-purple-100">
         <Image
-          src={bg}
+          src={bgImage}
           alt="Background BaCo"
           placeholder="blur"
           fill
