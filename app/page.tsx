@@ -21,79 +21,170 @@ export default function Home() {
         <Hero />
       </section>
 
-      {/* Categories Section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            Danh Mục Món Ăn
-          </h2>
+      {/* Categories Section - Redesigned */}
+      <section className="py-20 px-4 bg-gradient-to-br from-slate-50 via-white to-pink-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+              Danh Mục Món Ăn
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Khám phá thế giới hương vị đa dạng với các món ăn và thức uống
+              tuyệt vời
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Trà Sữa */}
-            <div className="bg-pink-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
-              <div className="w-20 h-20 mx-auto mb-4 bg-pink-200 rounded-full flex items-center justify-center">
-                <span className="i-hugeicons-bubble-tea-02 text-3xl text-pink-500" />
+            <div className="group relative overflow-hidden rounded-2xl bg-white shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+              <div className="absolute inset-0 bg-gradient-to-br from-pink-500/5 via-rose-500/5 to-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative p-8">
+                <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-pink-400 to-rose-500 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <span className="i-hugeicons-bubble-tea-02 text-4xl text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-3 text-center">
+                  Trà Sữa
+                </h3>
+                <p className="text-gray-600 text-center leading-relaxed">
+                  Đa dạng hương vị từ truyền thống đến hiện đại, topping phong
+                  phú và chất lượng cao
+                </p>
+                <div className="mt-6 flex justify-center">
+                  <div className="w-12 h-1 bg-gradient-to-r from-pink-400 to-rose-400 rounded-full" />
+                </div>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Trà Sữa</h3>
-              <p className="text-gray-600">
-                Đa dạng hương vị, topping phong phú
-              </p>
             </div>
 
             {/* Ăn Vặt */}
-            <div className="bg-purple-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
-              <div className="w-20 h-20 mx-auto mb-4 bg-purple-200 rounded-full flex items-center justify-center">
-                <span className="i-hugeicons-french-fries-02 text-3xl text-yellow-500" />
+            <div className="group relative overflow-hidden rounded-2xl bg-white shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+              <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 via-orange-500/10 to-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative p-8">
+                <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <span className="i-hugeicons-french-fries-02 text-4xl text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-3 text-center">
+                  Ăn Vặt
+                </h3>
+                <p className="text-gray-600 text-center leading-relaxed">
+                  Các món ăn vặt hấp dẫn, giòn tan và đậm đà hương vị
+                </p>
+                <div className="mt-6 flex justify-center">
+                  <div className="w-12 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full" />
+                </div>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Ăn Vặt</h3>
-              <p className="text-gray-600">Các món ăn vặt hấp dẫn</p>
             </div>
 
             {/* Mỳ Cay */}
-            <div className="bg-red-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
-              <div className="w-20 h-20 mx-auto mb-4 bg-red-200 rounded-full flex items-center justify-center">
-                <span className="i-hugeicons-noodles text-3xl text-red-500" />
+            <div className="group relative overflow-hidden rounded-2xl bg-white shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+              <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 via-orange-500/5 to-red-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative p-8">
+                <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-red-500 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <span className="i-hugeicons-noodles text-4xl text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-3 text-center">
+                  Mỳ Cay
+                </h3>
+                <p className="text-gray-600 text-center leading-relaxed">
+                  Nhiều cấp độ cay từ nhẹ đến siêu cay, thỏa mãn mọi khẩu vị
+                </p>
+                <div className="mt-6 flex justify-center">
+                  <div className="w-12 h-1 bg-gradient-to-r from-red-400 to-orange-400 rounded-full" />
+                </div>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Mỳ Cay</h3>
-              <p className="text-gray-600">Nhiều cấp độ cay cho bạn lựa chọn</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            Tại Sao Chọn Chúng Tôi?
-          </h2>
+      {/* Features Section - Redesigned */}
+      <section className="py-20 px-4 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+            }}
+          />
+        </div>
+
+        <div className="max-w-7xl mx-auto relative">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+              Tại Sao Chọn Chúng Tôi?
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Những lý do khiến chúng tôi trở thành lựa chọn hàng đầu của bạn
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 bg-pink-100 rounded-full flex items-center justify-center">
-                <span className="i-hugeicons-star text-2xl text-yellow-400" />
+            <div className="group text-center">
+              <div className="relative mb-6">
+                <div className="w-20 h-20 mx-auto bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl flex items-center justify-center shadow-2xl group-hover:scale-110 transition-all duration-300">
+                  <span className="i-hugeicons-star text-3xl text-white" />
+                </div>
+                <div className="absolute -top-2 -right-2 w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
+                  <span className="text-white text-sm font-bold">★</span>
+                </div>
               </div>
-              <h3 className="font-semibold mb-2">Chất Lượng</h3>
-              <p className="text-gray-600">Nguyên liệu tươi mới</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">
+                Chất Lượng Cao
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Nguyên liệu tươi mới, quy trình chế biến chuẩn quốc tế
+              </p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 bg-pink-100 rounded-full flex items-center justify-center">
-                <span className="i-hugeicons-falling-star text-2xl text-indigo-400" />
+
+            <div className="group text-center">
+              <div className="relative mb-6">
+                <div className="w-20 h-20 mx-auto bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center shadow-2xl group-hover:scale-110 transition-all duration-300">
+                  <span className="i-hugeicons-falling-star text-3xl text-white" />
+                </div>
+                <div className="absolute -top-2 -right-2 w-6 h-6 bg-blue-400 rounded-full flex items-center justify-center">
+                  <span className="text-white text-sm font-bold">⚡</span>
+                </div>
               </div>
-              <h3 className="font-semibold mb-2">Phục Vụ Nhanh</h3>
-              <p className="text-gray-600">Không phải chờ đợi lâu</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">
+                Phục Vụ Nhanh
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Đặt hàng nhanh chóng, giao hàng tận nơi trong 15-30 phút
+              </p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 bg-pink-100 rounded-full flex items-center justify-center">
-                <span className="i-hugeicons-money-saving-jar text-2xl text-green-500" />
+
+            <div className="group text-center">
+              <div className="relative mb-6">
+                <div className="w-20 h-20 mx-auto bg-gradient-to-br from-green-400 to-emerald-500 rounded-2xl flex items-center justify-center shadow-2xl group-hover:scale-110 transition-all duration-300">
+                  <span className="i-hugeicons-money-saving-jar text-3xl text-white" />
+                </div>
+                <div className="absolute -top-2 -right-2 w-6 h-6 bg-green-400 rounded-full flex items-center justify-center">
+                  <span className="text-white text-sm font-bold">$</span>
+                </div>
               </div>
-              <h3 className="font-semibold mb-2">Giá Cả Hợp Lý</h3>
-              <p className="text-gray-600">Phù hợp với mọi người</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">
+                Giá Cả Hợp Lý
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Chất lượng cao với mức giá phù hợp với mọi đối tượng khách hàng
+              </p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 bg-pink-100 rounded-full flex items-center justify-center">
-                <span className="i-hugeicons-gift text-2xl text-pink-400" />
+
+            <div className="group text-center">
+              <div className="relative mb-6">
+                <div className="w-20 h-20 mx-auto bg-gradient-to-br from-pink-400 to-rose-500 rounded-2xl flex items-center justify-center shadow-2xl group-hover:scale-110 transition-all duration-300">
+                  <span className="i-hugeicons-gift text-3xl text-white" />
+                </div>
+                <div className="absolute -top-2 -right-2 w-6 h-6 bg-pink-400 rounded-full flex items-center justify-center">
+                  <span className="text-white text-sm font-bold">🎁</span>
+                </div>
               </div>
-              <h3 className="font-semibold mb-2">Ưu Đãi</h3>
-              <p className="text-gray-600">Nhiều chương trình khuyến mãi</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">
+                Ưu Đãi Hấp Dẫn
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Nhiều chương trình khuyến mãi và quà tặng hấp dẫn mỗi tuần
+              </p>
             </div>
           </div>
         </div>
@@ -107,21 +198,41 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Liên Hệ</h2>
+      {/* Contact Section - Redesigned */}
+      <section className="py-20 px-4 bg-gradient-to-br from-pink-50 via-white to-rose-50 relative overflow-hidden">
+        {/* Background decoration */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-pink-200/20 to-rose-200/20 rounded-full -translate-y-48 translate-x-48" />
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-rose-200/20 to-pink-200/20 rounded-full translate-y-40 -translate-x-40" />
+
+        <div className="max-w-7xl mx-auto relative">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+              Liên Hệ Với Chúng Tôi
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Sẵn sàng phục vụ bạn mọi lúc, mọi nơi. Hãy liên hệ ngay hôm nay!
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Phone */}
             <a href="tel:0372440541" className="group">
-              <div className="bg-pink-50 rounded-lg p-6 text-center hover:shadow-lg transition-all group-hover:bg-pink-100">
-                <div className="w-16 h-16 mx-auto mb-4 bg-pink-200 rounded-full flex items-center justify-center">
-                  <span className="i-hugeicons-telephone text-2xl text-pink-500" />
+              <div className="relative overflow-hidden rounded-2xl bg-white shadow-xl hover:shadow-2xl transition-all duration-500 transform group-hover:-translate-y-2">
+                <div className="absolute inset-0 bg-gradient-to-br from-pink-500/5 via-purple-500/5 to-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="relative p-8 text-center">
+                  <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-pink-400 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <span className="i-hugeicons-telephone text-3xl text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-800 mb-3">
+                    Điện Thoại
+                  </h3>
+                  <p className="text-lg font-semibold text-pink-600 group-hover:text-pink-700 transition-colors">
+                    0372 440 541
+                  </p>
+                  <p className="text-sm text-gray-500 mt-2">
+                    Gọi ngay để đặt hàng
+                  </p>
                 </div>
-                <h3 className="font-semibold mb-2">Điện Thoại</h3>
-                <p className="text-gray-600 group-hover:text-pink-600">
-                  0372 440 541
-                </p>
               </div>
             </a>
 
@@ -129,16 +240,26 @@ export default function Home() {
             <a
               href="https://maps.app.goo.gl/3Ww4WrnMZ1mu3uzB9"
               target="_map"
-              className="bg-purple-50 rounded-lg p-6 text-center group hover:shadow-lg transition-all group-hover:bg-purple-100"
+              className="group"
             >
-              <div className="w-16 h-16 mx-auto mb-4 bg-purple-200 rounded-full flex items-center justify-center">
-                <span className="i-hugeicons-maps-search text-2xl text-purple-500" />
+              <div className="relative overflow-hidden rounded-2xl bg-white shadow-xl hover:shadow-2xl transition-all duration-500 transform group-hover:-translate-y-2">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-indigo-500/5 to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="relative p-8 text-center">
+                  <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <span className="i-hugeicons-maps-search text-3xl text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-800 mb-3">
+                    Địa Chỉ
+                  </h3>
+                  <p className="text-sm text-gray-600 group-hover:text-blue-600 transition-colors leading-relaxed">
+                    Cổng chào xã Hòa Đồng (đối diện Studio Thương cũ), Tây Hòa,
+                    Phú Yên
+                  </p>
+                  <p className="text-sm text-gray-500 mt-2">
+                    Click để xem bản đồ
+                  </p>
+                </div>
               </div>
-              <h3 className="font-semibold mb-2">Địa Chỉ</h3>
-              <p className="text-gray-600 group-hover:text-purple-600">
-                Cổng chào xã Hòa Đồng (đối diện Studio Thương cũ), Tây Hòa, Phú
-                Yên
-              </p>
             </a>
 
             {/* Fanpage */}
@@ -147,14 +268,22 @@ export default function Home() {
               target="_fb"
               className="group"
             >
-              <div className="bg-blue-50 rounded-lg p-6 text-center hover:shadow-lg transition-all group-hover:bg-blue-100">
-                <div className="w-16 h-16 mx-auto mb-4 bg-blue-200 rounded-full flex items-center justify-center">
-                  <span className="i-hugeicons-facebook-02 text-2xl text-blue-500" />
+              <div className="relative overflow-hidden rounded-2xl bg-white shadow-xl hover:shadow-2xl transition-all duration-500 transform group-hover:-translate-y-2">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-indigo-500/5 to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="relative p-8 text-center">
+                  <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <span className="i-hugeicons-facebook-02 text-3xl text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-800 mb-3">
+                    Fanpage
+                  </h3>
+                  <p className="text-lg font-semibold text-blue-600 group-hover:text-blue-700 transition-colors">
+                    Tiệm Trà BaCo
+                  </p>
+                  <p className="text-sm text-gray-500 mt-2">
+                    Theo dõi để cập nhật mới nhất
+                  </p>
                 </div>
-                <h3 className="font-semibold mb-2">Fanpage</h3>
-                <p className="text-gray-600 group-hover:text-blue-600">
-                  Tiệm Trà BaCo
-                </p>
               </div>
             </a>
           </div>
