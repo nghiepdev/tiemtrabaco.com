@@ -47,7 +47,7 @@ export default function Gallery() {
           : 'cubic-bezier(0.34, 1.56, 0.64, 1)'
       }
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-[200px]">
+      <div className="[--size:170px] sm:[--size:200px] grid gap-4 auto-rows-[200px] grid-cols-[repeat(auto-fill,minmax(var(--size),1fr))] lg:[--size:300px]">
         {images.map((src, index) => (
           <PhotoView key={index} src={`/assets/baco/${index}-min.jpg`}>
             <div
