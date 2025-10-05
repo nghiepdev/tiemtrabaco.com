@@ -1,7 +1,11 @@
 @import 'tailwindcss';
+@import 'tailwind-scrollbar-hide/v4';
 @plugin '../iconify.config.ts';
 
-:root {
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
 }
 
 @theme inline {
