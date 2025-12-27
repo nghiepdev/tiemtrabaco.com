@@ -8,6 +8,12 @@ const nextConfig: NextConfig = {
   },
   images: {
     qualities: [75, 100],
+    localPatterns: [
+      {
+        pathname: "/assets/**",
+        search: "",
+      },
+    ],
   },
 };
 
