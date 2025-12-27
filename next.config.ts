@@ -1,12 +1,13 @@
-import type {NextConfig} from 'next';
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  reactCompiler: true,
   experimental: {
     typedEnv: true,
   },
-  eslint: {
-    dirs: ['app', 'components', 'lib'],
+  images: {
+    qualities: [75, 100],
   },
 };
 

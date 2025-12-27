@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import {PhotoProvider, PhotoView} from 'react-photo-view';
-import 'react-photo-view/dist/react-photo-view.css';
+import { PhotoProvider, PhotoView } from "react-photo-view";
+import "react-photo-view/dist/react-photo-view.css";
 
 export default function Hero() {
   return (
     <div className="relative flex items-center justify-center min-h-[80vh] w-full overflow-hidden">
       {/* Content */}
       <div className="relative z-10 text-center px-4 flex flex-col items-center w-full">
-        <h1 className="text-5xl md:text-7xl font-extrabold mb-4 bg-gradient-to-r from-yellow-100 via-violet-200 to-fuchsia-200 bg-clip-text text-transparent drop-shadow-lg animate-fade-in">
+        <h1 className="text-5xl md:text-7xl font-extrabold mb-4 bg-linear-to-r from-yellow-100 via-violet-200 to-fuchsia-200 bg-clip-text text-transparent drop-shadow-lg animate-fade-in">
           Tiệm Trà BaCo
         </h1>
         <p className="text-xl md:text-2xl mb-4 text-white/90 animate-fade-in delay-100">
@@ -20,7 +20,7 @@ export default function Hero() {
           rel="noopener noreferrer"
           className="group flex items-start gap-3 mb-8 animate-fade-in delay-200 bg-white/10 backdrop-blur-sm rounded-2xl px-6 py-4 hover:bg-white/20 transition-all duration-300 hover:scale-105 border border-white/20 hover:border-pink-300/50"
         >
-          <div className="flex-shrink-0">
+          <div className="shrink-0">
             <span className="i-hugeicons-location-01 text-pink-400 text-2xl group-hover:text-pink-300 transition-colors" />
           </div>
           <div className="text-center flex-1">
@@ -34,7 +34,7 @@ export default function Hero() {
               📍 Nhấn để xem bản đồ
             </p>
           </div>
-          <div className="flex-shrink-0 self-center">
+          <div className="shrink-0 self-center">
             <span className="i-hugeicons-arrow-right-01 text-white/60 group-hover:text-pink-300 text-lg transition-colors" />
           </div>
         </a>
