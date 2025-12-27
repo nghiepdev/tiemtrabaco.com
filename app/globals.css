@@ -1,5 +1,5 @@
-@import 'tailwindcss';
-@import 'tailwind-scrollbar-hide/v4';
+@import "tailwindcss";
+@import "tailwind-scrollbar-hide/v4";
 @plugin '../iconify.config.ts';
 
 @layer base {
@@ -9,4 +9,34 @@
 }
 
 @theme inline {
+  --animate-fade-in: fade-in 1s cubic-bezier(0.4, 0, 0.2, 1) both;
+  --animate-delay-100: 0.1s;
+  --animate-delay-200: 0.2s;
+  --animate-delay-300: 0.3s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: var(--animate-fade-in);
+  }
+  .delay-100 {
+    animation-delay: var(--animate-delay-100);
+  }
+  .delay-200 {
+    animation-delay: var(--animate-delay-200);
+  }
+  .delay-300 {
+    animation-delay: var(--animate-delay-300);
+  }
 }

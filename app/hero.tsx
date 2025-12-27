@@ -1,8 +1,5 @@
 "use client";
 
-import { PhotoProvider, PhotoView } from "react-photo-view";
-import "react-photo-view/dist/react-photo-view.css";
-
 export default function Hero() {
   return (
     <div className="relative flex items-center justify-center min-h-[80vh] w-full overflow-hidden">
@@ -16,12 +13,16 @@ export default function Hero() {
         </p>
         <a
           href="https://maps.app.goo.gl/3Ww4WrnMZ1mu3uzB9"
-          target="_map"
+          target="_blank"
           rel="noopener noreferrer"
-          className="group flex items-start gap-3 mb-8 animate-fade-in delay-200 bg-white/10 backdrop-blur-sm rounded-2xl px-6 py-4 hover:bg-white/20 transition-all duration-300 hover:scale-105 border border-white/20 hover:border-pink-300/50"
+          className="group flex items-start gap-3 mb-8 animate-fade-in delay-200 bg-white/10 backdrop-blur-sm rounded-2xl px-6 py-4 hover:bg-white/20 transition-all duration-300 hover:scale-105 border border-white/20 hover:border-pink-300/50 focus:outline-none focus:ring-4 focus:ring-pink-300"
+          aria-label="View our location on map: Xã Hoà Đồng, huyện Tây Hoà, Tỉnh Phú Yên"
         >
           <div className="shrink-0">
-            <span className="i-hugeicons-location-01 text-pink-400 text-2xl group-hover:text-pink-300 transition-colors" />
+            <span
+              className="i-hugeicons-location-01 text-pink-400 text-2xl group-hover:text-pink-300 transition-colors"
+              aria-hidden="true"
+            />
           </div>
           <div className="text-center flex-1">
             <p className="text-lg md:text-xl text-white font-semibold group-hover:text-pink-100 transition-colors">
@@ -35,7 +36,10 @@ export default function Hero() {
             </p>
           </div>
           <div className="shrink-0 self-center">
-            <span className="i-hugeicons-arrow-right-01 text-white/60 group-hover:text-pink-300 text-lg transition-colors" />
+            <span
+              className="i-hugeicons-arrow-right-01 text-white/60 group-hover:text-pink-300 text-lg transition-colors"
+              aria-hidden="true"
+            />
           </div>
         </a>
         <div className="flex gap-4 items-center animate-fade-in delay-300">
@@ -44,44 +48,20 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-pink-500 hover:bg-pink-600 shadow-lg hover:scale-105 transition-all text-white px-8 py-3 rounded-full text-lg font-semibold focus:ring-4 focus:ring-pink-300 focus:outline-none"
+            aria-label="Contact us on Facebook Messenger to order"
           >
-            <span className="i-hugeicons-messenger" />
+            <span className="i-hugeicons-messenger" aria-hidden="true" />
             Gọi món
           </a>
-          <PhotoProvider>
-            <PhotoView src="/assets/baco/12-min.jpg">
-              <button className="text-white/90 hover:text-pink-400 cursor-pointer underline underline-offset-4 px-4 py-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-pink-300">
-                Xem menu
-              </button>
-            </PhotoView>
-          </PhotoProvider>
+          <a
+            href="#gallery"
+            className="text-white/90 hover:text-pink-400 cursor-pointer underline underline-offset-4 px-4 py-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-pink-300"
+            aria-label="View our photo gallery menu"
+          >
+            Xem menu
+          </a>
         </div>
       </div>
-      {/* Simple fade-in animation */}
-      <style jsx>{`
-        @keyframes fade-in {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: none;
-          }
-        }
-        .animate-fade-in {
-          animation: fade-in 1s cubic-bezier(0.4, 0, 0.2, 1) both;
-        }
-        .delay-100 {
-          animation-delay: 0.1s;
-        }
-        .delay-200 {
-          animation-delay: 0.2s;
-        }
-        .delay-300 {
-          animation-delay: 0.3s;
-        }
-      `}</style>
     </div>
   );
 }
