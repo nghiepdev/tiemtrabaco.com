@@ -5,6 +5,25 @@ const siteName = "Tiệm Trà BaCo";
 const title = `${siteName} | Quán Trà sữa, Mỳ Cay và Ăn Vặt giá rẻ tại Tây Hòa, Phú Yên`;
 const description =
   "Thưởng thức trà sữa, mỳ cay và đồ ăn vặt ngon, chuẩn vị. Chất lượng đảm bảo, phục vụ nhanh chóng, giá cả hợp lý giá rẻ tại Tây Hòa, Phú Yên";
+const keywords = [
+  "Trà sữa",
+  "Mỳ cay",
+  "Ăn vặt",
+  "Tré trộn",
+  "Chân gà",
+  "Trà chanh",
+  "Trà tắc",
+  "Kem tươi",
+  "Mì trộn",
+  "Viên chiên",
+  "Phô mai",
+  "Bánh tráng trộn",
+  "Tây Hòa",
+  "Phú Yên",
+  "tiệm trà",
+  "quán ăn",
+  "đồ uống",
+];
 
 const jsonLd = {
   "@context": "http://schema.org",
@@ -40,20 +59,7 @@ const jsonLd = {
     "https://tiemtrabaco.com/assets/baco/8-min.jpg",
     "https://tiemtrabaco.com/assets/baco/9-min.jpg",
   ],
-  servesCuisine: [
-    "Trà sữa",
-    "Mỳ cay",
-    "Ăn vặt",
-    "Tré trộn",
-    "Chân gà",
-    "Trà chanh",
-    "Trà tắc",
-    "Kem tươi",
-    "Mì trộn",
-    "Viên chiên",
-    "Phô mai",
-    "Bánh tráng trộn",
-  ],
+  servesCuisine: keywords,
   priceRange: "15000 VND - 45000 VND",
   aggregateRating: {
     "@type": "AggregateRating",
@@ -83,11 +89,19 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://tiemtrabaco.com"),
   title,
   description,
+  keywords,
   openGraph: {
     type: "website",
     siteName,
     title,
     description,
+    locale: "vi_VN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/opengraph-image.jpg"],
   },
   other: {
     "format-detection": "telephone=no",
