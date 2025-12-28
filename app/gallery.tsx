@@ -36,13 +36,13 @@ export default function Gallery() {
       <div
         className="[--size:170px] sm:[--size:200px] grid gap-4 auto-rows-[200px] grid-cols-[repeat(auto-fill,minmax(var(--size),1fr))] lg:[--size:300px]"
         role="list"
-        aria-label="Photo gallery"
+        aria-label="Thư viện ảnh"
       >
         {Array.from({ length: 15 }).map((_, index) => (
           <PhotoView
             key={index}
             src={`/assets/baco/${index}-min.jpg`}
-            aria-label={`View image ${index + 1} of 15 in gallery`}
+            aria-label={`Xem ảnh ${index + 1} trong 15 ảnh của thư viện`}
           >
             <div
               role="listitem"
@@ -59,7 +59,7 @@ export default function Gallery() {
               <div className="absolute inset-0 flex items-center justify-center text-gray-400">
                 <Image
                   src={`/assets/baco/${index}-min.jpg`}
-                  alt={`Gallery image ${index + 1} from Tiệm Trà BaCo`}
+                  alt={`Ảnh ${index + 1} trong thư viện ảnh của Tiệm Trà BaCo`}
                   fill
                   className="object-cover object-center"
                   loading={index < 6 ? "eager" : "lazy"}

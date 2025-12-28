@@ -10,11 +10,11 @@ export default function Home() {
       {/* Hero Section */}
       <section
         className="relative h-svh flex items-center justify-center overflow-hidden bg-linear-to-r from-pink-100 to-purple-100"
-        aria-label="Hero section"
+        aria-label="Phần giới thiệu chính"
       >
         <Image
           src={bgImage}
-          alt="Background BaCo"
+          alt=""
           placeholder="blur"
           fill
           className="object-cover object-center blur scale-105 brightness-50"
@@ -49,7 +49,7 @@ export default function Home() {
               <div
                 className="flex gap-4 lg:gap-8 *:flex-[1_0_300px]"
                 role="list"
-                aria-label="Food categories"
+                aria-label="Danh mục món ăn"
               >
                 {/* Trà Sữa */}
                 <article
@@ -68,7 +68,7 @@ export default function Home() {
                     >
                       <span
                         className="i-hugeicons-bubble-tea-02 text-4xl text-white"
-                        aria-label="Bubble tea icon"
+                        aria-hidden="true"
                       />
                     </div>
                     <h3 className="text-2xl font-bold text-gray-800 mb-3 text-center">
@@ -104,7 +104,7 @@ export default function Home() {
                     >
                       <span
                         className="i-hugeicons-noodles text-4xl text-white"
-                        aria-label="Noodles icon"
+                        aria-hidden="true"
                       />
                     </div>
                     <h3 className="text-2xl font-bold text-gray-800 mb-3 text-center">
@@ -139,7 +139,7 @@ export default function Home() {
                     >
                       <span
                         className="i-hugeicons-french-fries-02 text-4xl text-white"
-                        aria-label="French fries icon"
+                        aria-hidden="true"
                       />
                     </div>
                     <h3 className="text-2xl font-bold text-gray-800 mb-3 text-center">
@@ -196,7 +196,7 @@ export default function Home() {
               <div
                 className="flex gap-4 lg:gap-8 *:flex-[1_0_240px] *:snap-center *:snap-always *:bg-white"
                 role="list"
-                aria-label="Features and benefits"
+                aria-label="Tính năng và lợi ích"
               >
                 <article
                   className="group text-center focus-within:ring-2 focus-within:ring-yellow-500 focus-within:ring-offset-2 focus-within:outline-none rounded-lg"
@@ -210,7 +210,7 @@ export default function Home() {
                     >
                       <span
                         className="i-hugeicons-star text-3xl text-white"
-                        aria-label="Star icon"
+                        aria-hidden="true"
                       />
                     </div>
                     <div
@@ -245,7 +245,7 @@ export default function Home() {
                     >
                       <span
                         className="i-hugeicons-falling-star text-3xl text-white"
-                        aria-label="Lightning bolt icon"
+                        aria-hidden="true"
                       />
                     </div>
                     <div
@@ -280,7 +280,7 @@ export default function Home() {
                     >
                       <span
                         className="i-hugeicons-money-saving-jar text-3xl text-white"
-                        aria-label="Money saving jar icon"
+                        aria-hidden="true"
                       />
                     </div>
                     <div
@@ -316,7 +316,7 @@ export default function Home() {
                     >
                       <span
                         className="i-hugeicons-gift text-3xl text-white"
-                        aria-label="Gift icon"
+                        aria-hidden="true"
                       />
                     </div>
                     <div
@@ -392,13 +392,13 @@ export default function Home() {
           <div
             className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8"
             role="list"
-            aria-label="Contact information"
+            aria-label="Thông tin liên hệ"
           >
             {/* Phone */}
             <a
               href="tel:0372440541"
               className="group focus:outline-none focus:ring-4 focus:ring-pink-300 focus:ring-offset-2 rounded-2xl"
-              aria-label="Call us at 0372 440 541"
+              aria-label="Gọi ngay để đặt món 0372 440 541"
               role="listitem"
             >
               <div className="relative overflow-hidden rounded-2xl bg-white shadow-xl hover:shadow-2xl transition-all duration-500 transform group-hover:-translate-y-2 group-focus:-translate-y-2">
@@ -413,7 +413,7 @@ export default function Home() {
                   >
                     <span
                       className="i-hugeicons-telephone text-3xl text-white"
-                      aria-label="Telephone icon"
+                      aria-hidden="true"
                     />
                   </div>
                   <h3 className="text-xl font-bold text-gray-800 mb-3">
@@ -432,10 +432,10 @@ export default function Home() {
             {/* Address */}
             <a
               href="https://maps.app.goo.gl/3Ww4WrnMZ1mu3uzB9"
-              target="_blank"
+              target="map"
               rel="noopener noreferrer"
               className="group focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-offset-2 rounded-2xl"
-              aria-label="View our location on map: Cổng chào xã Hòa Đồng (đối diện Studio Thương cũ), Tây Hòa, Phú Yên"
+              aria-label="Xem vị trí của chúng tôi trên bản đồ: Cổng chào xã Hòa Đồng (đối diện Studio Thương cũ), Tây Hòa, Phú Yên"
               role="listitem"
             >
               <div className="relative overflow-hidden rounded-2xl bg-white shadow-xl hover:shadow-2xl transition-all duration-500 transform group-hover:-translate-y-2 group-focus:-translate-y-2">
@@ -450,16 +450,16 @@ export default function Home() {
                   >
                     <span
                       className="i-hugeicons-maps-search text-3xl text-white"
-                      aria-label="Map location icon"
+                      aria-hidden="true"
                     />
                   </div>
                   <h3 className="text-xl font-bold text-gray-800 mb-3">
                     Địa Chỉ
                   </h3>
-                  <p className="text-sm text-gray-600 group-hover:text-blue-600 transition-colors leading-relaxed">
+                  <address className="text-sm text-gray-600 group-hover:text-blue-600 transition-colors leading-relaxed not-italic">
                     Cổng chào xã Hòa Đồng (đối diện Studio Thương cũ), Tây Hòa,
                     Phú Yên
-                  </p>
+                  </address>
                   <p className="text-sm text-gray-500 mt-2">
                     Click để xem bản đồ
                   </p>
@@ -470,10 +470,10 @@ export default function Home() {
             {/* Fanpage */}
             <a
               href="https://www.facebook.com/tiemtrabaco"
-              target="_blank"
+              target="messenger"
               rel="noopener noreferrer"
               className="group focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-offset-2 rounded-2xl"
-              aria-label="Visit our Facebook fanpage: Tiệm Trà BaCo"
+              aria-label="Truy cập fanpage Facebook của chúng tôi: Tiệm Trà BaCo"
               role="listitem"
             >
               <div className="relative overflow-hidden rounded-2xl bg-white shadow-xl hover:shadow-2xl transition-all duration-500 transform group-hover:-translate-y-2 group-focus:-translate-y-2">
@@ -488,7 +488,7 @@ export default function Home() {
                   >
                     <span
                       className="i-hugeicons-facebook-02 text-3xl text-white"
-                      aria-label="Facebook icon"
+                      aria-hidden="true"
                     />
                   </div>
                   <h3 className="text-xl font-bold text-gray-800 mb-3">
